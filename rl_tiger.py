@@ -89,6 +89,12 @@ class TigerQLearningAgent:
     def save_model(self, path='tiger_q_table.pkl'):
         with open(path, 'wb') as f:
             pickle.dump(dict(self.q_table), f)
+            
+    def load_model(self, path='tiger_q_table.pkl'):
+        with open(path, 'rb') as f:
+            q_data = pickle.load(f)
+        self.q_table = defaultdict(float, q_data)
+
 
 
 def simulate_tiger_move(board, action, tiger_positions, goats_captured):

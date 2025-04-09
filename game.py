@@ -10,13 +10,13 @@ from functions import *
 from PIL import ImageTk, Image
 from random import randint, choice
 from sys import platform
-from rl_tiger import QLearningAgent
+from rl_tiger import TigerQLearningAgent
 from rl_goat import GoatQLearningAgent  # Your goat RL class
 agent_goat = GoatQLearningAgent()
 agent_goat.load_model('goat_q_table.pkl')
 
-agent = QLearningAgent()
-agent.load_model()  # Loads from 'q_table.pkl'
+agent = TigerQLearningAgent()
+agent.load_model('tiger_q_table.pkl')  # Loads from 'q_table.pkl'
 # Board parts
 
 numPosition = 23 
