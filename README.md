@@ -1,8 +1,5 @@
 # Goats & Tigers
 
-Project advisor: Narayana Prasad Santhanam, Associate Professor
-
-## Motivation
 
 Develop a Reinforcement Learning algorithm on strategy games.
 
@@ -25,7 +22,8 @@ python game.py
 ├── notebooks
 │   ├── Playground.ipynb    # Experimental notebook
 │   └── RL.ipynb            # Some data visualizations
-└── references
+├── rl_goat.py              # Reniforcement Learning for Goat aganist statistical Tiger.
+├── rl_tiger.py             # Reniforcement Learning for Tiger aganist trained Goat.
 ```
 
 ## How to Play
@@ -40,13 +38,6 @@ Tigers
 * To move tigers, click the tiger, then click on a valid empty position
 * To capture, click on a valid empty position the tiger goes to.
 
-## Todo
-
-* Play the game so it generates data.
-* Computer vs computer
-* Develop Reinforcement learning scheme
-* Undo move feature.
-* Organize how the data.txt collects data (i.e. what other valuable information are needed).
 
 ## Dependencies
 
@@ -64,6 +55,3 @@ conda install numpy
 conda install scipy
 ``` -->
 
-## References
-
-[how-to-play-goats-and-tigers.html](http://kreedaakaushalya.blogspot.com/2008/05/how-to-play-goats-and-tigers.html)
